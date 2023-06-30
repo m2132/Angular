@@ -1,0 +1,17 @@
+<p>store {{name}}</p>
+
+<input (change)="setName($event)" />
+
+<div>count click:{{count}}</div>
+<hr/>
+<div *ngIf="count%2; else CountSub">איזה יופי</div>
+
+<button (click)="onClickCount()"> cunter</button>
+<div>גיל {{age}}</div>
+<input [(ngModel)]="name"/>
+<input [(ngModel)]="age"/>
+
+
+<ng-template #CountSub>
+    <div>מעולה </div>
+</ng-template>

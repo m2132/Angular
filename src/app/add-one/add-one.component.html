@@ -1,0 +1,31 @@
+<!--<div>
+    <input [formControl]="name" type="text" />
+</div>
+<button [disabled]="name.invalid" (click)="print()">הדפסה </button> 
+
+<form [formGroup]="formGr" (submit)="printForm()">
+    <label>שם</label>
+    <input formControlName="name" />
+    <br/>
+    <label>טלפון</label>
+    <input formControlName="phone" />
+    <br/>
+    <label>מייל</label>
+    <input formControlName="email" />
+   
+    <br/>
+    <label>כתובת</label>
+    <input formControlName="address" />
+    <br/>
+    <label>גיל</label>
+    <input formControlName="age" />
+    <br/>
+    <label >Alias:</label>
+    <div *ngFor="let alias of children.controls; let i=index">
+        The repeated alias template 
+        <input id="alias-{{ i }}" type="text" [formControl]="alias[i]">
+      </div>
+
+      <button type="button" (click)="addchild()"> הוסף ילד</button>
+    <button type="submit" [disabled]="formGr.invalid">שליחה</button>
+</form> -->

@@ -1,0 +1,13 @@
+<div [class]="newClassName">
+    <p>{{studentInput.Id}}</p>
+    <p>{{studentInput.Name}}</p>
+    <p>{{studentInput.Phone}}</p>
+    <p>{{studentInput.Addres}}</p>
+    <p> כמות: {{studentInput.count}}</p>
+</div>
+<hr/>
+<button (click)="addCount()">הוסף עוד</button>
+{{count}}
+
+<button (click)="setCount()"> עדכן כמות</button>
+<hr/>

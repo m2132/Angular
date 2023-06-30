@@ -1,0 +1,8 @@
+<form [formGroup]="formttt" (submit)="addUser()">
+    <label>שם</label>
+    <input type="text" formControlName="name" />
+    <label>כתובת מייל</label>
+    <input type="text" formControlName="email" />
+
+    <button type="submit">שלח</button>
+</form>

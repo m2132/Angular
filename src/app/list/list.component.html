@@ -1,0 +1,9 @@
+
+<app-show-one
+
+*ngFor="let student of students; index as i" [studentInput]="student" (setCountEvent)="setCount($event,i)" newClassName="error">
+</app-show-one>
+<app-add-one></app-add-one>
+<!-- <app-show-one [studentInput]="students" (setCountEvent)="setId($event)"  [newClassName]="red"></app-show-one> -->
+
+<!-- <app-show-one [studentInput]="students" (deletMeEvent)="deklet($event)" (setCountEvent)="setCount($event)" newClassName="color"></app-show-one> -->
